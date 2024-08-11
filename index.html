@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/alfabeto.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1 class="titulo_header"> &#128269 Encriptador de texto</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="main_izq">
+                <textarea class="entrada_texto" placeholder="Ingrese el texto aquí"></textarea>
+                <p class="aviso"> &#128680 Solo letras en minúscula, sin acentos y sin caracteres especiales.</p>
+                    <div class="botones">
+                        <button class="boton_encriptar" onclick="botonEncriptar()">Encriptar</button>
+                        <button class="boton_desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                    </div>
+            </div>
+            <div class="main_der">
+                <textarea class="salida_texto" placeholder="Ningún mensaje fue encontrado&#13;Ingresa el texto que deseas encriptar o desencriptar."readonly></textarea>
+                    <div>
+                        <button class="boton_copiar" onclick="botonCopiar()">Copiar</button>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="logo_redes">
+                <a href="https://github.com/StefGz">
+                    <img src="./img/logo-git.png" alt="Logo de Github">
+                </a>
+                <a href="https://www.linkedin.com/in/stefgz/">
+                    <img src="./img/logo-in.png" alt="Logo de Linkedin">
+                </a>
+            </div>
+                <div class="texto_footer">
+                    <p>Desarrollado por: Estefany Gutiérrez, 2024.</p>
+                    <p>Wallpaper e iconos tomados de freepik.es e iconos8.es</p>
+                </div>
+        </div>
+    </footer>   
+</body>
+
+<script src="app.js"></script>
+
+</html>
